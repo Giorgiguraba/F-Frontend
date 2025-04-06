@@ -299,7 +299,7 @@ export default function UserDropdown() {
         }
 
         // First try to get the current user from /api/users/me endpoint
-        let response = await fetch("https://back-end-three-delta.vercel.app/api/users/me", {
+        let response = await fetch("https://f-backend-l4sd.vercel.app/api/users/me", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -319,7 +319,7 @@ export default function UserDropdown() {
           }
 
           // Fetch all users and find the one matching our ID
-          response = await fetch("https://back-end-three-delta.vercel.app/api/users", {
+          response = await fetch("https://f-backend-l4sd.vercel.app/api/users", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

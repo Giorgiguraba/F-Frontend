@@ -30,13 +30,15 @@ export default function SignUpForm() {
     try {
       console.log("Submitting registration data:", formData)
 
-      const res = await fetch("https://back-end-three-delta.vercel.app/api/register", {
+      const res = await fetch("https://f-backend-l4sd.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      })
+        mode: 'cors', // Explicitly add CORS mode
+      });
+      
 
       const data = await res.json()
       console.log("Registration response:", data)
