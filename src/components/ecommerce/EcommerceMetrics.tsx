@@ -13,7 +13,7 @@ export const EcommerceMetrics = () => {
     setIsLoading(true)
     const token = localStorage.getItem("token") // Or get it from context/cookie
   
-    fetch("http://localhost:3001/api/numbers", {
+    fetch("https://back-end-three-delta.vercel.app/api/numbers", {
       headers: {
         Authorization: `Bearer ${token}`
       },

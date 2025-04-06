@@ -64,7 +64,7 @@ export default function UserMetaCard() {
   async function fetchUser() {
     try {
       setLoading(true)
-      const response = await fetch("http://localhost:3001/api/users")
+      const response = await fetch("https://back-end-three-delta.vercel.app/api/users")
       const data = await response.json()
       // Initialize form data
       if (data) {

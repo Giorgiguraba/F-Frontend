@@ -30,7 +30,7 @@ export default function SignUpForm() {
     try {
       console.log("Submitting registration data:", formData)
 
-      const res = await fetch("http://localhost:3001/api/register", {
+      const res = await fetch("https://back-end-three-delta.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
